@@ -1,25 +1,37 @@
-.App {
+.app-wrapper{
+  margin: 0 auto;
+  width: 1200px;
+  display: grid;
+  grid-template-areas: 
+  "h h" 
+  "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /*grid-gap: 10px;*/
+
+}
+.header{
+  grid-area: h;
+  background-color: goldenrod;
+}
+.nav{
+  grid-area: n;
+  background-color: burlywood;
   text-align: center;
+}
+.content{
+  grid-area: c;
+  background-color: Lightblue;
+}
+.content img{
+  width: 100%;
 }
 
 .App-logo {
   height: 40vmin;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header img {
+ height: 60px;
+ width: 60px;
 }
 
-.App-link {
-  color: #09d3ac;
-}
-ul li {
-  list-style: decimal-leading-zero;
-}

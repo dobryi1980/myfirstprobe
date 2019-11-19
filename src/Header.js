@@ -1,11 +1,14 @@
 import React from 'react';
+//import './header.css';
+
 const Header = () => {
     return (
-      <div>
-        <a href='#s'> home</a>
-        <a href='#s'> Bome</a>
-        <a href='#s'> Dome</a>
-      </div>
+            <header className='header'>
+                <img src='https://brandmark.io/logo-rank/random/pepsi.png' alt='Logo'></img>
+            </header>
     );
-  }
-  export default Header;
+}
+export default Header;
+
+
+
